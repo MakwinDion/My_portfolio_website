@@ -360,7 +360,7 @@ form input,form textarea{
     /*----------------media quries----------------------*/
     @media only screen and (max-width:900px) {
         #header{
-            background-image: url(images/Black\ and\ White\ Simple\ Motivation\ Phone\ Wallpaper.png);
+            background-image: url(Black\ and\ White\ Simple\ Motivation\ Phone\ Wallpaper.png);
         }
         .headertext{
             margin-top: 50%;
