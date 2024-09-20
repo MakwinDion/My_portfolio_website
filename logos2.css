@@ -1,100 +1,122 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-.heading {
-    display: flex;
-    justify-content: center;
-    align-items: center ;
-    height: 100%;
+* {
+    box-sizing: border-box;
 }
 
- h1 {
-    text-align: center;
-    color: rgba(255, 0, 0, 0.653);
-    
+body {
+    font-family: Lato, sans-serif;
+    margin: 0;
+    padding: 1rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(20, 20, 20, 1);
 }
-h1.heading {
-    font-weight: 300;
-    font-size: 45px;
-    font-family: 'Edu TAS Beginner', cursive;
-font-family: 'Lobster', sans-serif;
+
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
 }
-body{
-    background-color: rgb(28, 27, 27);
+
+h1 {
+    margin-bottom: 30px;
+    color: aliceblue;
 }
-.box{
-    margin-top: 30px;
-    --gap: 16px;    
-    --num-col:4;
-    --row-height:300px;
-    box-sizing: border-box;
-    padding: var(--gap);
+
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: grid;
-    grid-template-columns: repeat(var(--num-col),1fr);
-    grid-auto-rows: var(--row-height);
-    gap: var(--gap);
+    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust min width for smaller images */
+    max-width: 100%;
+    width: 70rem;
 }
-.box img{
-    display: grid;
+
+img {
+    width: 100%;
+    height: auto; 
+    display: block;
+    object-fit: cover; 
+    transition: transform 1000ms;
+}
+
+figure {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+figure::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(0, 0, 0, 0.5);
+    transform-origin: center;
+    opacity: 0;
+    transform: scale(2);
+    transition: opacity 300ms;
+}
+
+figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    filter: grayscale(100%);
-    transition: 0.8s;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    font-size: 1.2rem;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 600ms, transform 600ms;
 }
-.box img:hover{
-    filter: grayscale(0);
-    transform: scale(1.1);
+
+a:is(:hover, :focus) figure::after {
+    opacity: 1;
 }
-@media only screen and (max-width:900px) 
-{
-    *{
-        margin: 0;
-        padding: 0;
+
+a:is(:hover, :focus) figcaption {
+    opacity: 1;
+    transition: opacity 600ms;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    figcaption {
+        transform: translate3d(0, 2rem, 0);
     }
-    .heading {
-        display: flex;
-        justify-content: center;
-        align-items: center ;
-        height: 100%;
+
+    figure::after {
+        border-radius: 50%;
+        opacity: 1;
+        transform: scale(0);
+        transition: transform 900ms;
     }
-    h1 {
-        text-align: center;
-        color: rgba(255, 0, 0, 0.653);
-        
+
+    a:is(:hover, :focus) figure::after {
+        transform: scale(2.5);
     }
-    h1.heading {
-        font-weight: 50;
-        font-size: 35px;
-        font-family: 'Edu TAS Beginner', cursive;
-    font-family: 'Lobster', sans-serif;
+
+    a:is(:hover, :focus) figcaption {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        transition: opacity 600ms 400ms, transform 600ms 400ms;
     }
-    body{
-        background-color: rgb(28, 27, 27);
-    }
-    .box{
-        margin-top: 30px;
-        --gap: 10px;    
-        --num-col:2;
-        --row-height:200px;
-        box-sizing: border-box;
-        padding: var(--gap);
-        display: grid;
-        grid-template-columns: repeat(var(--num-col),1fr);
-        grid-auto-rows: var(--row-height);
-        gap: var(--gap);
-    }
-    .box img{
-        display: grid;
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        filter: grayscale(0%);
-        transition: 0.8s;
-    }
-    .box img:hover{
-        filter: grayscale(0);
-        transform: scale(1.1);
+
+    a:is(:hover, :focus) img {
+        transform: scale(1.2);
     }
 }
