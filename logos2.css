@@ -14,7 +14,6 @@ body {
     background: rgba(20, 20, 20, 1);
 }
 
-
 .section {
     display: flex;
     flex-direction: column;
@@ -25,8 +24,8 @@ body {
 h1 {
     margin-bottom: 30px;
     color: aliceblue;
+    font-size: 2rem; /* Responsive font size */
 }
-
 
 ul {
     list-style: none;
@@ -34,18 +33,18 @@ ul {
     padding: 0;
     display: grid;
     gap: 0.5rem;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust min width for smaller images */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     max-width: 100%;
     width: 70rem;
 }
 
 img {
-	padding: 20px;
-	border-radius: 20px;
+    padding: 20px;
+    border-radius: 20px;
     width: 100%;
-    height: auto; 
+    height: auto;
     display: block;
-    object-fit: cover; 
+    object-fit: cover;
     transition: transform 1000ms;
 }
 
@@ -77,7 +76,7 @@ figcaption {
     height: 100%;
     display: flex;
     justify-content: center;
-    place-items: center;
+    align-items: center;
     text-align: center;
     padding: 1rem;
     color: white;
@@ -120,5 +119,36 @@ a:is(:hover, :focus) figcaption {
 
     a:is(:hover, :focus) img {
         transform: scale(1.2);
+    }
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem; /* Smaller font for tablets */
+    }
+
+    ul {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust grid for smaller screens */
+        width: 100%;
+    }
+
+    img {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; /* Smaller font for mobile */
+    }
+
+    ul {
+        grid-template-columns: 1fr; /* Stack items vertically on mobile */
+    }
+
+    img {
+        padding: 10px;
     }
 }
