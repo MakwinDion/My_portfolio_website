@@ -12,7 +12,6 @@ color: #fff;
 
 }
 html{
-@@ -215,16 +215,20 @@
 #portfolio {
 padding: 80px 0;
 }
@@ -40,7 +39,6 @@ padding: 80px 0;
 position: relative;
 overflow: hidden;
 display: flex;
-@@ -233,12 +237,19 @@
 height: 300px; /* Set a fixed height for consistency */
 }
 
@@ -65,7 +63,6 @@ width: 100%;
 }
 
 .layer {
-@@ -260,184 +271,231 @@
 transition: height 0.7s;
 }
 
