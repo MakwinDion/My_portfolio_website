@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Website</title>
-  <link rel="shortcut icon" type="image" href="./Makwin2-removebg-preview.png" >
+  <link rel="shortcut icon" type="image/png" href="./Makwin2-removebg-preview.png">
   <link rel="stylesheet" href="style4.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,228 +13,144 @@
 </head>
 <body>
   <div id="preloader"></div>
+  
+  <!-- Header Section -->
   <div id="header">
     <div class="container">
       <nav>
-        <img src="./2-removebg-preview.png" alt="this is a logo" class="logo">
+        <img src="./Makwin4-removebg-preview.png" alt="Logo" class="logo">
         <ul id="sidemenu">
-         
-           <li><a href="#header">Home</a></li> 
-            <li> <a href="#about">About</a></li>
-           <li> <a href="#services">Services</a></li>
-          <li>  <a href="#portfolio">Projects</a></li>
-           <li> <a href="#contact">Contact</a> </li>
-           <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
         </ul>
-       
         <i class="fa-solid fa-bars" onclick="openmenu()"></i>
       </nav>
       <div class="headertext">
-        <h2><p>Hi,My Name is <span>Makwin</span></p></h2>
-      
-      <div><h2>And I am a Passionate</h2></div>   
-      <span id="element"></span>
-    </div>
+        <h2>Hi, My Name is <span>Makwin</span></h2>
+        <div><h2>And I am a Passionate</h2></div>
+        <span id="element"></span>
+      </div>
     </div>
   </div>
-  <!-----about--->
+  
+  <!-- About Section -->
   <div id="about">
     <div class="container">
       <div class="row">
         <div class="about-col-1">
-          <img src="./WhatsApp Image 2024-06-14 at 09.17.31_66895b91.jpg" alt="Image" >
+          <img src="./2023-09-26 (1).png" alt="Image">
         </div>
         <div class="about-col-2">
           <h1 class="sub-title">About Me</h1>
-          <p class="content">Hi,My name is <span>Makwin Dion D Cunha.</span>and  I am a dedicated student  at canara engineering college,currently immersed in the dynamic field of Artificial 
-            Intelligence and Machine Learning (AI/ML). My academic pursuit involves delving into the intricacies 
-            of advanced technologies, exploring the vast potential that AI/ML presents for shaping the future. Beyond the academic realm,
-             my passion extends to the creative domains of design and development. Proficient in graphic design, I specialize 
-             in crafting compelling logos and visually engaging posters. My expertise also encompasses UI/UX design, where I focus on creating 
-             seamless and user-friendly interfaces. On the technical side, I excel in web development, implementing full-stack solutions that 
-             seamlessly blend functionality and aesthetic appeal. As a freelancer, I relish the opportunity to explore diverse projects, leveraging my skills 
-             to bring creative ideas to life. My journey is defined by a commitment to continuous learning, a passion for the analytical and artistic 
-             facets of technology, and a drive to make a meaningful impact in the world of AI and design.</p>
+          <p class="content">Hi, my name is <span>Makwin Dion D Cunha</span>. I am a dedicated student at Canara Engineering College, currently immersed in the dynamic field of Artificial Intelligence and Machine Learning (AI/ML). My academic pursuit involves delving into the intricacies of advanced technologies, exploring the vast potential that AI/ML presents for shaping the future. Beyond the academic realm, my passion extends to the creative domains of design and development. Proficient in graphic design, I specialize in crafting compelling logos and visually engaging posters. My expertise also encompasses UI/UX design, where I focus on creating seamless and user-friendly interfaces. On the technical side, I excel in web development, implementing full-stack solutions that seamlessly blend functionality and aesthetic appeal. As a freelancer, I relish the opportunity to explore diverse projects, leveraging my skills to bring creative ideas to life. My journey is defined by a commitment to continuous learning, a passion for the analytical and artistic facets of technology, and a drive to make a meaningful impact in the world of AI and design.</p>
           <div class="tab-titles">
             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experince')">Experience</p>
             <p class="tab-links" onclick="opentab('education')">Education</p>
-             <p class="tab-links"onclick="opentab('experince')">Experience</p>
           </div>
           <div class="tab-contents active-tab" id="skills">
             <ul>
-              <li><span>UI/UX:</span><br>Designing web/app Interfaces</li>
-              <li><span>Web Development:</span><br>Full Stack web Development</li>
-              <li><span>Python Programing:</span><br>Programing using Python </li>
+              <li><span>UI/UX:</span><br>Designing web/app interfaces</li>
+              <li><span>Web Development:</span><br>Full Stack web development</li>
+              <li><span>Graphic Designing:</span><br>Designing logos and posters</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experince">
+            <ul>
+              <li><span>2020-Current:</span><br>Designing web/app interfaces</li>
+              <li><span>2020-Current:</span><br>Full Stack web development</li>
+              <li><span>2020-Current:</span><br>Designing logos and posters</li>
             </ul>
           </div>
           <div class="tab-contents" id="education">
             <ul>
               <li><span>2019-2020:</span><br>SSLC</li>
-              <li><span>2020-2022:</span><br>pre university college</li>
-              <li><span>2022-Current:</span><br>B.E in Artificial Intillegence and Meachine Learning</li>
-            </ul>
-          </div>
-          <div class="tab-contents" id="experince">
-            <ul>
-              <li><span>2020-Current:</span><br>Designing web/app Interfaces</li>
-              <li><span>2020-Current:</span><br>Full Stack web Development</li>
-              <li><span>2020-Current:</span><br>Designing Logos and Posters</li>
+              <li><span>2020-2022:</span><br>Pre-University College</li>
+              <li><span>2022-Current:</span><br>B.E in Artificial Intelligence and Machine Learning</li>
             </ul>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-----Services--->
+
+  <!-- Services Section -->
   <div id="services">
     <div class="container">
       <h1 class="sub-title">My Services</h1>
       <div class="services-list">
         <div>
           <i class="fa-solid fa-code"></i>
-          <h2>Web Development </h2>
-           <p class="content">I possess a robust skill set in web development, 
-            seamlessly merging technical proficiency with a discerning eye for design.</p>
-            <a href="#">Learn More</a>
+          <h2>Web Development</h2>
+          <p class="content">I possess a robust skill set in web development, seamlessly merging technical proficiency with a discerning eye for design.</p>
+          <a href="#">Learn More</a>
         </div>
         <div>
           <i class="fa-solid fa-crop-simple"></i>
-          <h2>UI/Ux Designs</h2>
-           <p class="content">my passion extends to the creative domains of design and development. Proficient in graphic design, I specialize 
-            in crafting compelling logos and visually engaging posters. My expertise also encompasses UI/UX design, where I focus</p>
-            <a href="#">Learn More</a>
+          <h2>UI/UX Designs</h2>
+          <p class="content">My passion extends to the creative domains of design and development. Proficient in graphic design, I specialize in crafting compelling logos and visually engaging posters.</p>
+          <a href="#">Learn More</a>
         </div>
         <div>
-         <i class="fa-brands fa-python"></i>
-          <h2>Python Programing</h2>
-           <p class="content" >I possess  skill set in Python Programing, 
-            To create Applications .</p>
-            <a href="#">Learn More</a>
+          <i class="fa-solid fa-paintbrush"></i>
+          <h2>Graphic Designs</h2>
+          <p class="content">I possess a robust skill set in graphic design, seamlessly merging technical proficiency with a discerning eye for design.</p>
+          <a href="#">Learn More</a>
         </div>
       </div>
     </div>
   </div>
-  <!-----Portfolio--->
+
+  <!-- Portfolio Section -->
   <div id="portfolio">
     <div class="container">
-      <h1 class="sub-title">My portfolio</h1>
+      <h1 class="sub-title">My Portfolio</h1>
       <div class="work-list">
-        <ul>
-          <li>
-            <a href="logos2.html">
-              <figure>
-                <img src="./images/Group 7.jpg">
-                <figcaption>Motor Cycle Web Design</figcaption>
-              </figure>
-            </a>
-          </li>
-          <li>
-            <a href="logos2.html">
-              <figure>
-                <img src="./images/Group 9.png">
-                <figcaption>Travel App UI/UX Design</figcaption>
-              </figure>
-            </a>
-          </li>
-          <li>
-            <a href="logos2.html">
-              <figure>
-                <img src="./images/mohammad-rahmani-DwDZ5mgwhsc-unsplash.jpg">
-                <figcaption>Random Password Generator</figcaption>
-              </figure>
-            </a>
-          </li>
-        </ul>
-      <a href="logos2.html" class="btn">See More</a>
+        <div class="work">
+          <img src="images/Coding club.png" alt="Poster for Coding Club">
+          <div class="layer">
+            <h3 class="content">Poster for Coding Club</h3>
+            <p class="content">Just a poster created using Canva.</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/AAKRITI.png" alt="Competitive Poster for Event">
+          <div class="layer">
+            <h3 class="content">Competitive Poster for an Event</h3>
+            <p class="content">Just a poster created using Canva.</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/classical Music classes.png" alt="Logo for Woodstock Music Class">
+          <div class="layer">
+            <h3 class="content">Logo for Woodstock Music Class</h3>
+            <p class="content">Just a poster created using Canva.</p>
+            <a href="#"><i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See More</a>
     </div>
   </div>
-  <!-----contact----->
+
+  <!-- Contact Section -->
   <div id="contact">
     <div class="container">
       <div class="row">
         <div class="contact-left">
           <h1 class="sub-title">Contact Me</h1>
-          <p><i class="fa-solid fa-envelope"></i>makwindion0803@gmail.com</p>
-          <p><i class="fa-solid fa-mobile"></i>+91 7829981170</p>
+          <p><i class="fa-solid fa-envelope"></i> makwindion@gmail.com</p>
+          <p><i class="fa-solid fa-mobile"></i> 7349481170</p>
           <div class="social-icons">
-            <a href ="https://www.facebook.com/makwindion.dcunha" ><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.facebook.com/makwindion.dcunha"><i class="fa-brands fa-facebook"></i></a>
             <a href="https://www.instagram.com/mr_dcunha/"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://twitter.com/codemak61526"><i class="fa-brands fa-twitter"></i></a>
             <a href="https://www.linkedin.com/in/makwin-dion-d-cunha-29639a217/"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://github.com/MakwinDion"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.upwork.com/freelancers/~01041fb3a270b08b2b"><i class="fa-solid fa-desktop"></i></a>
-          </div>
-          <a href="images/my-cv.pdf" download class="btn btn2" >Download CV</a>
-        </div>
-        <div class="contact-right">
-          <form name="submit-to-google-sheet" >
-            <input type="text " name="name" placeholder="your name" required>
-            <input type="email" name="email" placeholder="your email" required>
-            <textarea name="message"  rows="6" placeholder="your Message"></textarea>
-            <button type="submit" class="btn btn2">Submit</button>
-          </form>
-          <span id="msg"></span>
-        </div>
-      </div>
-    </div>
-    <div class="copyright">
-      <p>copyright © Makwin .Made with <i class="fa-regular fa-heart" style="color: #ff4000;"></i></p>
-    </div>
-  </div>
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script> 
-  <script>
-    var typed = new Typed('#element', {
-      strings: ['Full Stack Web Developer', 'Python Programer','Freelancer','UI/UX designer'],typeSpeed: 65,
-    });
-  </script>
-   <script>
-    var loader=document.getElementById("preloader");
-    window.addEventListener("load",function(){
-      loader.style.display="none"
-    })
-  </script>
-  <script>
-    var tablinks=document.getElementsByClassName("tab-links");
-    var tabcontents=document.getElementsByClassName("tab-contents");
-    function opentab(tabname)
-    {
-      for(tablink of tablinks)
-      {
-        tablink.classList.remove("active-link");
-      }
-      for(tabcontent of tabcontents)
-      {
-        tabcontent.classList.remove("active-tab");
-      }
-      event.currentTarget.classList.add("active-link");
-      document.getElementById(tabname).classList.add("active-tab");
-    }
-  </script>
-  <script>
-    var sidemenu=document.getElementById("sidemenu");
-    function openmenu(){
-      sidemenu.style.right="0";
-    }
-    function closemenu(){
-      sidemenu.style.right="-200px";
-    }
-  </script>
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxUJhE26iqi9e5_svbexu-ZY79PtcGIxjU7MGk7VpmQ4PJJHpI1U09pcGHk9891N_cRKw/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg=document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response =>{ msg.innerHTML="Message sent Sucessfully"
-        setTimeout(function(){
-          msg.innerHTML=""
-        },5000)
-        form.reset()
-      })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-</body>
-</html>
+            <a href="https://www.upwork.com/freelancers/~
