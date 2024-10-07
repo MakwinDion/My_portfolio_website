@@ -16,21 +16,32 @@
   <div id="header">
     <div class="container">
       <nav>
-        <img src="./2-removebg-preview.png" alt="Logo" class="logo">
+        <img src="./2-removebg-preview.png" alt="this is a logo" class="logo">
         <ul id="sidemenu">
-          <li><a href="#header">Home</a></li>
-          <li><a href="#header">About</a></li>
-          <li><a href="#header">Portfolio</a></li>
-          <li><a href="#header">Contact Me</a></li>
+         
+           <li><a href="#header">Home</a></li> 
+            <li> <a href="#about">About</a></li>
+           <li> <a href="#services">Services</a></li>
+          <li>  <a href="#portfolio">Projects</a></li>
+           <li> <a href="#contact">Contact</a> </li>
+           <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
         </ul>
+       
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
       </nav>
+      <div class="headertext">
+        <h2><p>Hi,My Name is <span>Makwin</span></p></h2>
+      
+      <div><h2>And I am a Passionate</h2></div>   
+      <span id="element"></span>
+    </div>
     </div>
   </div>
 
   <div class="container">
     <div class="row">
       <div class="about-col-1">
-        <img src="./WhatsApp Image 2024-06-14 at 09.17.31_66895b91.jpg" alt="Image">
+        <img src="./WhatsApp Image 2024-10-07 at 09.27.29_d526a7a5" alt="">
       </div>
       <div class="about-col-2">
         <h1 class="sub-title">About Me</h1>
@@ -160,7 +171,7 @@
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <script>
     var typed = new Typed('#element', {
-      strings: ['Web Developer', 'Graphic Designer', 'Programmer', 'Freelancer', 'UI/UX Designer'],
+      strings: ['Web Developer',  'Python developer', 'Freelancer', 'UI/UX Designer'],
       typeSpeed: 75,
     });
   </script>
