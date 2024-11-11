@@ -5,36 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio Website</title>
   <link rel="shortcut icon" type="image/png" href="./Makwin2-removebg-preview.png">
-  <link rel="stylesheet" href="style4.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/60efc248a9.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/scrollreveal"></script> <!-- ScrollReveal Library -->
 </head>
 <body>
-  <div id="preloader"></div>
+  
   <div id="header">
     <div class="container">
       <nav>
         <img src="./2-removebg-preview.png" alt="this is a logo" class="logo">
         <ul id="sidemenu">
-         
-           <li><a href="#header">Home</a></li> 
-            <li> <a href="#about">About</a></li>
-           <li> <a href="#services">Services</a></li>
-          <li>  <a href="#portfolio">Projects</a></li>
-           <li> <a href="#contact">Contact</a> </li>
-           <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
         </ul>
-       
         <i class="fa-solid fa-bars" onclick="openmenu()"></i>
       </nav>
       <div class="headertext">
-        <h2><p>Hi,My Name is <span>Makwin</span></p></h2>
-      
-      <div><h2>And I am a Passionate</h2></div>   
-      <span id="element"></span>
-    </div>
+        <h2><p>Hi, My Name is <span>Makwin</span></p></h2>
+        <div><h2>And I am a Passionate</h2></div>   
+        <span id="element"></span>
+      </div>
     </div>
   </div>
 
@@ -45,7 +43,19 @@
       </div>
       <div class="about-col-2">
         <h1 class="sub-title">About Me</h1>
-        <p class="content">Hi, my name is <span>Makwin Dion D Cunha.</span> I am a dedicated student at Canara Engineering College, currently immersed in the dynamic field of Artificial Intelligence and Machine Learning (AI/ML). My academic pursuit involves delving into the intricacies of advanced technologies and exploring the vast potential that AI/ML presents for shaping the future. Beyond the academic realm, my passion extends to the creative domains of design and development. Proficient in graphic design, I specialize in crafting compelling logos and visually engaging posters. My expertise also encompasses UI/UX design, where I focus on creating seamless and user-friendly interfaces. On the technical side, I excel in web development, implementing full-stack solutions that seamlessly blend functionality and aesthetic appeal. As a freelancer, I relish the opportunity to explore diverse projects, leveraging my skills to bring creative ideas to life. My journey is defined by a commitment to continuous learning, a passion for the analytical and artistic facets of technology, and a drive to make a meaningful impact in the world of AI and design.</p>
+        <p class="content"><p class="content">Hi, my name is <span>Makwin Dion D Cunha.</span>
+             I am a dedicated student at Canara Engineering College, currently immersed in the dynamic 
+             field of Artificial Intelligence and Machine Learning (AI/ML). My academic pursuit involves 
+             delving into the intricacies of advanced technologies and exploring the vast potential that 
+             AI/ML presents for shaping the future. Beyond the academic realm, my passion extends to the creative
+              domains of design and development. Proficient in graphic design, I specialize in crafting compelling 
+              logos and visually engaging posters. My expertise also encompasses UI/UX design, where I focus on creating 
+              seamless and user-friendly interfaces. On the technical side, I excel in web development, implementing 
+              full-stack solutions that seamlessly blend functionality and aesthetic appeal. As a freelancer, 
+              I relish the opportunity to explore diverse projects, leveraging my skills to bring creative ideas to life. 
+              My journey is defined by a commitment to continuous learning, a passion for the analytical and artistic facets o
+              f technology, and a drive to make a meaningful impact in the world of AI and design.</p>
+        
         <div class="tab-titles">
           <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
           <p class="tab-links" onclick="opentab('education')">Education</p>
@@ -83,19 +93,19 @@
         <div>
           <i class="fa-solid fa-code"></i>
           <h2>Web Development</h2>
-          <p class="content">I possess a robust skill set in web development, seamlessly merging technical proficiency with a discerning eye for design.</p>
+          <p class="content">I possess a robust skill set in web development...</p>
           <a href="#">Learn More</a>
         </div>
         <div>
           <i class="fa-solid fa-crop-simple"></i>
           <h2>UI/UX Designs</h2>
-          <p class="content">My passion extends to the creative domains of design and development. Proficient in graphic design, I specialize in crafting compelling logos and visually engaging posters. My expertise also encompasses UI/UX design.</p>
+          <p class="content">My passion extends to the creative domains of design and development...</p>
           <a href="#">Learn More</a>
         </div>
         <div>
           <i class="fa-brands fa-python"></i>
-          <h2>Python Programing</h2>
-          <p class="content">I possess a robust skill in python Programing.</p>
+          <h2>Python Programming</h2>
+          <p class="content">I possess a robust skill in python programming.</p>
           <a href="#">Learn More</a>
         </div>
       </div>
@@ -110,7 +120,6 @@
           <img src="Group 7.jpg" alt="Poster for coding club">
           <div class="layer">
             <h3 class="content">Motorcycle Web Design</h3>
-            <p class="content">...</p>
             <a href="#"><i class="fa-solid fa-link"></i></a>
           </div>
         </div>
@@ -118,15 +127,13 @@
           <img src="Group 9.png" alt="Competitive Poster for an event">
           <div class="layer">
             <h3 class="content">Travel App UI/UX Design</h3>
-            <p class="content">...</p>
             <a href="#"><i class="fa-solid fa-link"></i></a>
           </div>
         </div>
         <div class="work">
           <img src="Group 3travel.png" alt="Group">
           <div class="layer">
-            <h3 class="content"> Travel website design </h3>
-            <p class="content">....</p>
+            <h3 class="content">Travel Website Design</h3>
             <a href="#"><i class="fa-solid fa-link"></i></a>
           </div>
         </div>
@@ -148,7 +155,7 @@
             <a href="https://twitter.com/codemak61526"><i class="fa-brands fa-twitter"></i></a>
             <a href="https://www.linkedin.com/in/makwin-dion-d-cunha-29639a217/"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://github.com/MakwinDion"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.upwork.com/freelancers/~01041fb3a270b08b2b"><i class="fa-solid fa-desktop"></i></a>
+            <!-- Add more icons if needed -->
           </div>
           <a href="./blue professional modern CV resume.pdf" download class="btn btn2">Download CV</a>
         </div>
@@ -170,33 +177,44 @@
 
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <script>
+    // Typed.js for typing effect
     var typed = new Typed('#element', {
-      strings: ['Web Developer',  'Python developer', 'Freelancer', 'UI/UX Designer'],
+      strings: ['Web Developer', 'Python Developer', 'Freelancer', 'UI/UX Designer'],
       typeSpeed: 75,
     });
   </script>
   <script>
-    var loader = document.getElementById("preloader");
-    window.addEventListener("load", function() {
-      loader.style.display = "none";
-    });
+    // ScrollReveal animations
+    ScrollReveal().reveal('.about-col-1', { distance: '50px', origin: 'left', duration: 2000, reset: true });
+    ScrollReveal().reveal('.about-col-2', { distance: '50px', origin: 'right', duration: 2000, reset: true });
+    ScrollReveal().reveal('.services-list div', { distance: '100px', origin: 'bottom', duration: 2000, interval: 200, reset: true });
+    ScrollReveal().reveal('.work-list .work', { distance: '50px', origin: 'bottom', duration: 2000, interval: 200, reset: true });
+     ScrollReveal().reveal('.content', { distance: '50px', origin: 'bottom', duration: 2000, interval: 100, reset: true });
+     ScrollReveal().reveal('.contact-left', { distance: '50px', origin: 'bottom', duration: 2000, interval: 200, reset: true });
+     ScrollReveal().reveal('.contact-right', { distance: '50px', origin: 'bottom', duration: 2000, interval: 200, reset: true });
+     ScrollReveal().reveal('.about-col-1 img', { distance: '50px', origin: 'bottom', duration: 2000, interval: 200, reset: true });
+
   </script>
   <script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
     function opentab(tabname) {
-      for (let tablink of tablinks) {
-        tablink.classList.remove("active-link");
+      // Get all elements with class="tab-contents" and hide them
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      for (var i = 0; i < tabcontents.length; i++) {
+        tabcontents[i].classList.remove("active-tab");
       }
-      for (let tabcontent of tabcontents) {
-        tabcontent.classList.remove("active-tab");
+  
+      // Get all elements with class="tab-links" and remove the class "active-link"
+      var tablinks = document.getElementsByClassName("tab-links");
+      for (var i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active-link");
       }
-      event.currentTarget.classList.add("active-link");
+  
+      // Show the current tab, and add an "active" class to the button that opened the tab
       document.getElementById(tabname).classList.add("active-tab");
+      event.currentTarget.classList.add("active-link");
     }
   </script>
-  <script>
+   <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxUJhE26iqi9e5_svbexu-ZY79PtcGIxjU7MGk7VpmQ4PJJHpI1U09pcGHk9891N_cRKw/exec';
     const form = document.forms['submit-to-google-sheet'];
     const msg = document.getElementById("msg");
